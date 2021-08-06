@@ -1,0 +1,6 @@
+<!--pages/studyRoom/studyRoom.wxml-->
+<view class="container studyRoom">
+  <Box></Box>
+  <button class="invitation">邀请道友加入学习局</button>
+  <button class="getInto" bindtap="gotoLearningBureau">进入学习局</button>
+</view>

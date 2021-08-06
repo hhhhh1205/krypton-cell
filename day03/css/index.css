@@ -1,0 +1,158 @@
+html{
+    font-size: 14px;
+}
+
+html, body{
+    height: 100%;
+    background-color: #F2EEE3;
+}
+
+#app{
+    height: 100%;
+    padding: 1.5rem 1.5rem 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .left{
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    background: #E4DFD1;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    position: relative;
+}
+
+.nav .left img{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.5rem;
+}
+
+.nav .left span{
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: #FF2727;
+    position: absolute;
+    top: 0;
+    right: 0.1rem;
+}
+
+.nav .right{
+    display: flex;
+    align-items: center;
+}
+
+.nav .right .search{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 2rem 0 1.5rem;
+}
+
+.nav .right .pic{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+}
+
+.main{
+    margin: 2rem 0;
+}
+
+.column{
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+    align-items: center;
+    position: relative;
+}
+
+.column > img{
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-right: 1rem;
+    padding: 0.1rem;
+}
+
+.column .right{
+    display: flex;
+    flex-flow: column;
+}
+
+.column .right .up{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.column .right .up h2{
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.column .right .up > img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.column .right .up p{
+    font-size: 0.8rem;
+    position: absolute;
+    right: 1.5rem;
+    color: #A2A9B3;
+}
+
+.column .right .down{
+    display: flex;
+    align-items: center;
+}
+
+.column .right .down > img{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+}
+
+.column .right .down p{
+    font-size: 0.8rem;
+    color: #ACAEB1;
+}
+
+.column .right .down span{
+    font-size: 0.8rem;
+    color: #fff;
+    background: #FF4140;
+    padding: 0 0.4rem;
+    border-radius: 1rem;
+    position: absolute;
+    right: 1.5rem;
+}
+
+.footer{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 2rem;
+    width: max-content;
+    border-radius: 3rem;
+    margin: 0 auto;
+}
+
+.footer img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.footer p{
+    color: #fff;
+    font-size: 1.2rem;
+}

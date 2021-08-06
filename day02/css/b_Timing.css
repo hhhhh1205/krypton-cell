@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: PingFangSC-Regular,'Lantinghei SC','Open Sans',Arial,'Hiragino Sans GB','Microsoft YaHei','微软雅黑',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    color: #333;
+    font-style: normal;
+}
+
+html, body{
+    height: 100%;
+}
+
+.timing{
+    width: 100%;
+    height: 100%;
+}
+
+.nav{
+    width: 1080px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav .left {
+    display: flex;
+    align-items: center;
+}
+
+.nav .left img{
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.nav .right{
+    width: 82px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .right img{
+    width: 30px;
+    height: 30px;
+}
+
+.main{
+    background-color: #F0F5F8;
+    height: calc(100% - 64px);
+}
+
+.mobile-box{
+    display: none;
+}
+
+.container{
+    width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .left {
+    overflow: hidden;
+}
+
+.container .left h2{
+    font-size: 42px;
+    margin-top: 150px;
+}
+
+.container .left p{
+    font-size: 14px;
+}
+
+.container .left .pic{
+    margin-top: 40px;
+    position: relative;
+    left: -15px;
+}
+
+.container .left .pic > div img{
+    width: 150px;
+    height: 70px;
+}
+
+.container .left .pic > img{
+    width: 300px;
+    height: 80px;
+}
+
+.container .left .footer{
+    margin-top: 80px;
+}
+
+.container .left .footer p{
+    font-size: 12px;
+}
+
+.container .left .footer p .ga{
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+
+.swiper-container {
+    width: 700px;
+} 
+
+.swiper-slide{
+    display: flex;
+}
+
+.swiper-slide img{
+    height: 585px;
+    width: 450px;
+}
+
+.swiper-slide > div{
+    position: relative;
+    top: 400px;
+}
+
+.swiper-slide > div h2{
+    font-size: 20px;
+}
+
+.swiper-slide > div p{
+    font-size: 16px;
+}

@@ -1,0 +1,111 @@
+/* pages/invitation/invitation.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+
+.invitation{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.invitation .bg{
+  width: 100%;
+  height: 100%;
+}
+
+.main{
+  width: 100%;
+  position: absolute;
+  top: 235px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content p{
+  background: #F6492C;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: relative;
+  right: 5px;
+}
+
+.content text{
+  font-size: 22px;
+  text-align: center;
+}
+
+.up .name{
+  width: 200px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background-color: #FFE8B2;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.middle .task{
+  width: 200px;
+  height: 60px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: #FFE8B2;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.down .member{
+  margin-top: 5px;
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.down .member image{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.member .pic{
+  border: 1px solid #fff;
+}
+
+.member .pic::before{
+    position: absolute;
+    top: 35px;
+    left: 7px;
+    font-size: 10px; 
+    color: #fff;
+    background: #FB563C;
+    content: '组长';
+    padding: 0 6px;
+    border-radius: 10px;
+}
+
+button{
+  width: 200px !important;
+  margin-top: 27px;
+  color: #fff;
+  font-size: 24px !important;
+  border: 2px solid #A0BDFF;
+  background-color: #3B79F7;
+  border-radius: 50px !important;
+  box-shadow: 0 5px #4C72CF;
+}
+
+button:active{
+  transform: translateY(3px);
+  box-shadow: 0 0 #4C72CF;
+}

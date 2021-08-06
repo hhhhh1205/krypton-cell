@@ -1,0 +1,21 @@
+<!--pages/organization/organization.wxml-->
+<view class="organization">
+  <image class="bg" src="../../images/bg_1.png"></image>
+  <view class="main">
+    <view class="up">
+      <view class="content">
+        <p></p>
+        <text>作业局名称:</text>
+      </view>
+      <input type="text" bindinput="inputCom" value="{{inputValue}}" placeholder="例：不写完作业不睡觉局" placeholder-style="font-size:18px;color:#CECECE;" />
+    </view>
+    <view class="down">
+      <view class="content">
+        <p></p>
+        <text>学习任务:</text>
+      </view>
+      <textarea  bindinput="textareaCom" value="{{textareaValue}}" placeholder="例：8点起床，学习2小时" placeholder-style="font-size:18px;color:#CECECE;"></textarea>
+    </view>
+    <button bindtap="gotoInvitation">立即组局</button>
+  </view>
+</view>

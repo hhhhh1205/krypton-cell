@@ -1,0 +1,80 @@
+/* pages/organization/organization.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+
+.organization{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.organization .bg{
+  width: 100%;
+  height: 100%;
+}
+
+.main{
+  width: 100%;
+  position: absolute;
+  top: 275px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content p{
+  background: #F6492C;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: relative;
+  right: 5px;
+}
+
+.content text{
+  font-size: 22px;
+  text-align: center;
+}
+
+.up input{
+  width: 200px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #FF9400;
+  background-color: #fff;
+  margin: 10px auto 15px;
+}
+
+.down textarea{
+  width: 200px;
+  height: 70px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: 1px solid #FF9400;
+  background-color: #fff;
+  margin: 10px auto 0;
+}
+
+button{
+  margin-top: 50px;
+  color: #fff;
+  font-size: 24px !important;
+  border: 2px solid #A0BDFF;
+  background-color: #3B79F7;
+  border-radius: 50px !important;
+  box-shadow: 0 5px #4C72CF;
+}
+
+button:active{
+  transform: translateY(3px);
+  box-shadow: 0 0 #4C72CF;
+}

@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: PingFangSC-Regular,'Lantinghei SC','Open Sans',Arial,'Hiragino Sans GB','Microsoft YaHei','微软雅黑',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    color: #333;
+    font-style: normal;
+}
+
+html, body{
+    height: 100%;
+}
+
+.timing{
+    width: 100%;
+    height: 100%;
+}
+
+.nav{
+    width: 100%;
+    height: 12vw;
+    min-height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px 15px;
+}
+
+.nav .left {
+    display: flex;
+    align-items: center;
+    min-width: 140px;
+}
+
+.nav .left img{
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+}
+
+.nav .right{
+    width: 82px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .right img{
+    width: 30px;
+    height: 30px;
+}
+
+.main{
+    height: 100%;
+}
+
+.container{
+    display: none;
+}
+
+.mobile{
+    background-color: #F0F5F8;
+    height: max-content;
+}
+
+.swiper-slide{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-slide h2{
+    font-size: 8vw;
+    margin-top: 10vw;
+}
+
+.swiper-slide p{
+    font-size: 3vw;
+    margin-top: 4vw;
+    text-align: center;
+}
+
+.swiper-slide span{
+    font-size: 5vw;
+    margin-top: 10px;
+    margin-bottom: 15vw;
+    text-align: center;
+    color: #fff;
+    background-color: #5095F4;
+    border-radius: 50px;
+    padding: 15px 30px;
+}
+
+.swiper-slide img{
+    width:60vw;
+}
+
+.swiper-slide .bubble{
+    background-color: #fff;
+    position: absolute;
+    bottom: 10vw;
+    left: 50vw;
+    border-radius: 3vw;
+    padding: 5vw;
+    width: max-content;
+}
+
+.swiper-slide .bubble h2{
+    font-size: 5vw;
+    margin: 0;
+}
+
+.swiper-slide .bubble p{
+    font-size: 3vw;
+    margin-top: 1vw;
+}
+
+.swiper-slide .bubbleAppear{
+    animation-name: appear;
+    animation-duration: 3s;
+}
+
+.footer{
+    padding: 5vw;
+}
+
+.footer p .ga{
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+
+@keyframes appear{
+    0%{ opacity: 0; }
+	45%{ opacity: 1; }
+    75%{ opacity: 1; }
+    100%{ opacity: 0; }
+}

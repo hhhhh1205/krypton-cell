@@ -1,0 +1,88 @@
+@charset "UTF-8";
+html {
+  font-size: calc(100vw/25); }
+
+html, body {
+  height: 100%;
+  background: #FFEEC0; }
+
+#app {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; }
+
+.nav {
+  display: flex;
+  justify-content: center; }
+  .nav img {
+    width: 23rem;
+    height: 23rem; }
+
+.container {
+  padding: 0 2rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 5rem; }
+  .container .innerBox {
+    border: 2px solid #0E4A8D;
+    border-radius: 2rem;
+    padding: 2rem;
+    position: relative;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+    .container .innerBox .top {
+      background: #FFEEC0;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: -1.5rem;
+      padding: 0 3rem; }
+      .container .innerBox .top img {
+        width: 2.2rem;
+        height: 1.5rem;
+        position: absolute;
+        top: -1rem;
+        left: 2rem; }
+      .container .innerBox .top h2 {
+        font-size: 1.8rem;
+        font-weight: 600; }
+    .container .innerBox .middle h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 2rem; }
+    .container .innerBox .middle .context {
+      position: relative; }
+      .container .innerBox .middle .context img {
+        width: 1.5rem;
+        height: 1rem;
+        position: absolute;
+        top: -0.7rem;
+        left: -1.4rem; }
+      .container .innerBox .middle .context p {
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: '宋体';
+        margin-bottom: 0.8rem; }
+    .container .innerBox .middle .imgUrl {
+      width: 16rem;
+      height: 12rem; }
+    .container .innerBox button {
+      color: #fff;
+      font-family: '微软雅黑';
+      font-size: 1rem;
+      font-weight: 600;
+      background-color: #0E4A8D;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      margin-top: 1rem; }
+    .container .innerBox .noneBox {
+      width: 9rem;
+      height: 0.5rem;
+      background: #FFEEC0;
+      position: absolute;
+      bottom: -0.3rem; }
+
+/*# sourceMappingURL=index.css.map */

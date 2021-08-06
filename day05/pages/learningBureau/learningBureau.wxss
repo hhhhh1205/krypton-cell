@@ -1,0 +1,109 @@
+/* pages/learningBureau.wxss */
+.people{
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.showLittle{
+  overflow: hidden;
+  /* transition: height 1s; */
+}
+
+.inputBox{
+  display: flex;
+  flex-flow: column;
+  padding: 0 40px;
+}
+
+.inputBox > p{
+  width: 1px;
+  height: 20px;
+  border-left: 1px dashed #dfdfdf;
+  margin-left: 23px;
+}
+
+.inputMsg{
+  display: flex;
+  align-items: center;
+}
+
+.inputMsg image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 15px;
+}
+
+.inputMsg input{
+  background-color: #faf9f9;
+  color: #CBCBCB;
+  padding: 12px 10px;
+  border-radius: 30px;
+  width: 225px;
+}
+
+.intoBox{
+  display: flex;
+  flex-flow: column;
+  padding: 0 40px;
+  margin-top: 10px;
+}
+
+.intoBox > p{
+  width: 1px;
+  height: 20px;
+  border-left: 1px dashed #dfdfdf;
+  margin-left: 23px;
+}
+
+.intoPeople{
+  display: flex;
+}
+
+.intoPeople image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.intoPeople .content{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  color: #5094F3;
+}
+
+.content p{
+  font-size: 14px;
+}
+
+.showMore{
+  color: #CECECE;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto 0;
+  width: max-content;
+}
+
+
+.showMore image{
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.getInto {
+  background-color: #5094F3;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 15px 140px;
+  margin-top: 15px;
+  width: max-content !important;
+  margin: 96px auto 20px;
+}

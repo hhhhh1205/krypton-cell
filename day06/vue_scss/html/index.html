@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue+scss</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="nav">
+            <img src="../images/top.png" alt="">
+        </div>
+        <div class="container">
+            <div class="innerBox" v-for="(data, i) in dataList" :key="i">
+                <div class="top">
+                    <img :src="data.h2Img" alt="">
+                    <h2>{{data.h2}}</h2>
+                </div>
+                <div class="middle">
+                    <h4 :style="data.h4 ? '' : 'display: none;'">{{data.h4}}</h4>
+                    <div class="context" v-for="(p, j) in data.p" :key="j">
+                        <img :src="data.pImg" alt="">
+                        <p>{{p}}</p>
+                    </div>
+                    <img :style="data.imgUrl ? '' : 'display: none;'" class="imgUrl" :src="data.imgUrl" alt="">
+                </div>
+                <button>{{data.btn}}</button>
+                <div class="noneBox"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    const vm = new Vue({
+        data: {
+            dataList: [
+                {
+                    h2Img: "../images/one.png",
+                    h2: "连线学习",
+                    h4: "",
+                    pImg: "../images/new.png",
+                    p: ["可以创建私密学习房，和好友学习不再被人打扰"],
+                    imgUrl: "../images/c_img.png",
+                    btn: "试试新的连线学习"
+                },
+                {
+                    h2Img: "../images/two.png",
+                    h2: "树洞对讲机",
+                    h4: "学习生活中遇到烦心事？快来这里和小伙伴们一起吐槽",
+                    pImg: "../images/new.png",
+                    p: [
+                        "频道内有主题，方便你找到组织",
+                        "对讲人数无上限，一起吐槽一起high！",
+                        "频道内直接组学习局，遇到合拍的人别放走！"
+                    ],
+                    imgUrl: "",
+                    btn: "频道high聊中，快去看看 >"
+                },
+            ]
+        },
+    }).$mount("#app");
+
+</script>
+
+</html>

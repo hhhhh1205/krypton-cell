@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/learningBureau/learningBureau",
+    "pages/studyRoom/studyRoom"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "usingComponents": {
+    "Box": "components/box/box"
+  },
+  "sitemapLocation": "sitemap.json"
+}

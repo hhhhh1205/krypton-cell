@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猩猩点灯</title>
+    <link rel="stylesheet" href="../less/common.css">
+    <link rel="stylesheet" href="../less/index.css">
+    <link rel="stylesheet" href="../swiper-6.7.5/swiper-master/package/swiper-bundle.min.css">
+    <script src="../swiper-6.7.5/swiper-master/package/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="nav">
+            <img src="../images/monkey.png" alt="">
+            <p>内容精准输送到千万Timing学习用户</p>
+            <span>立即下载</span>
+        </div>
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-swiper-autoplay="2000" v-for="(data, i) in dataList" :key="i">
+                        <h2>{{data.h2}}</h2>
+                        <p>{{data.p}}</p>
+                        <img :src="data.imgUrl" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="pic">
+                <img src="../images/weibo.png" alt="">
+                <img src="../images/email.png" alt="">
+            </div>
+            <div class="copyright">
+                <div class="ft">
+                    <p>&copy;2016-2019 Timing360.com</p>
+                    <p>武汉氪细胞网络技术有限公司</p>
+                </div>
+                <p>鄂ICP备17013082号-1</p>
+                <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42010202001767">
+                        <img class="ga" src="http://www.timing360.com/images/site/v3/ga.png">
+                        鄂公网安备 42010202001767号
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    const vm = new Vue({
+        data: {
+            dataList: [
+                {
+                    h2: "学习直播",
+                    p: "随时开直播，用知识积攒人气",
+                    imgUrl: "../images/1.png"
+                },
+                {
+                    h2: "学习小卖部",
+                    p: "助您打造专业付费内容体系",
+                    imgUrl: "../images/2.png"
+                },
+                {
+                    h2: "我的答疑室",
+                    p: "实时对话答疑，搞笑接收反馈",
+                    imgUrl: "../images/3.png"
+                },
+                {
+                    h2: "学习小组",
+                    p: "时刻关注学院动态，灵活调整教学方案",
+                    imgUrl: "../images/4.png"
+                },
+            ],
+        },
+    }).$mount("#app");
+
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: true,//可选选项，自动滑动
+        loop: true,
+    })
+
+</script>
+
+</html>

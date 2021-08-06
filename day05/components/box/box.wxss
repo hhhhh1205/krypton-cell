@@ -1,0 +1,77 @@
+/* components/box.wxss */
+.box{
+  background-color: #fff;
+  margin: 15px auto;
+  padding: 20px 10px 50px;
+  display: flex;
+  flex-flow: column;
+}
+
+.title{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px auto 45px;
+}
+
+.main{
+  display: flex;
+}
+
+.left, .right{
+  padding: 0 35px;
+}
+
+.left{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-right: 2px solid #F1F1F1;
+}
+
+.left p, .left text{
+  color: #FFA646;
+  text-align: center;
+}
+
+.left p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.left text{
+  padding: 5px 0 10px;
+  font-size: 14px;
+}
+
+.img{
+  display: flex;
+}
+
+.img image{
+  width: 25px;
+  height: 25px;
+}
+
+.img image:not(:last-child){
+  margin-right: 5px;
+}
+
+.sofa image:not(:first-child){
+  width: 18px;
+  height: 18px;
+  background-color: #F0F0F0;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.right{
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.right p{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 5px auto;
+}

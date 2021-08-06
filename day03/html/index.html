@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>道友圈</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="nav">
+            <div class="left">
+                <img src="../images/circle.png" alt="">
+                <p>道友圈</p>
+                <span></span>
+            </div>
+            <div class="right">
+                <img class="scan" src="../images/scan.png" alt="">
+                <img class="search" src="../images/search.png" alt="">
+                <img class="pic" src="../images/pic.png" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="column" v-for="(data,i) in dataList" :key="i" :style="data.columnStyle">
+                <img :style="data.imgStyle" :src="data.imgUrl" alt="">
+                <div class="right">
+                    <div class="up">
+                        <h2 :style="data.h2Style">{{data.h2}}</h2>
+                        <img :style="data.h2Img ? '' : 'display: none;'" :src="data.h2Img" alt="">
+                        <p :style="data.upStyle">{{data.time}}</p>
+                    </div>
+                    <div class="down">
+                        <img :style="data.pImg ? '' : 'display: none;'" :src="data.pImg" alt="">
+                        <p :style="data.dpStyle">{{data.p}}</p>
+                        <span>{{data.icon}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="../images/add.png" alt="">
+            <p>连线学习</p>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    const vm = new Vue({
+        data: {
+            show: true,
+            dataList: [
+                {
+                    imgUrl: "../images/calendar.png",
+                    h2: "我的学习局",
+                    h2Img: "../images/1.png",
+                    p: "学习局创建成功：作业不做完就不走...",
+                    pImg: "",
+                    time: "下午3:14",
+                    icon: "",
+                    columnStyle: {
+                        minHeight: '3.8rem',
+                        background: '#EAF3FF'
+                    },
+                    imgStyle: {
+
+                    },
+                    h2Style: {
+
+                    },
+                    upStyle: {
+
+                    },
+                    dpStyle: {
+                    },
+                },
+                {
+                    imgUrl: "../images/add_friends.png",
+                    h2: "邀请道友",
+                    h2Img: "",
+                    p: "",
+                    pImg: "",
+                    time: "",
+                    icon: "",
+                    columnStyle: {
+                        minHeight: '3.8rem',
+                        background: '#fff'
+                    },
+                    imgStyle: {
+                        width: '2rem',
+                        height: '2rem',
+                        position: 'relative',
+                        left: '0.8rem',
+                    },
+                    h2Style: {
+                        fontSize: '1.4rem',
+                        position: 'relative',
+                        top: '0.1rem',
+                        left: '1.6rem'
+                    },
+                    upStyle: {
+
+                    },
+                    dpStyle: {
+
+                    },
+                },
+                {
+                    imgUrl: "../images/img1.png",
+                    h2: "Timing小书童",
+                    h2Img: "",
+                    p: "新手引导",
+                    pImg: "",
+                    time: "下午3:14",
+                    icon: "",
+                    columnStyle: {
+                        minHeight: '3.8rem',
+                        background: '#fff'
+                    },
+                    imgStyle: {
+
+                    },
+                    h2Style: {
+
+                    },
+                    upStyle: {
+
+                    },
+                    dpStyle: {
+                    },
+                },
+                {
+                    imgUrl: "../images/img2.png",
+                    h2: "盲僧李青",
+                    h2Img: "../images/dao_blue.png",
+                    p: "考研的学习资料我是在一个直系的...",
+                    pImg: "../images/zuojiantou_gray.png",
+                    time: "下午3:14",
+                    icon: "88",
+                    columnStyle: {
+                        minHeight: '3.8rem',
+                        background: '#fff'
+                    },
+                    imgStyle: {
+                        border: '0.2rem solid #38A0FF',
+                        borderRadius: '50%',
+                    },
+                    h2Style: {
+
+                    },
+                    upStyle: {
+
+                    },
+                    dpStyle: {
+
+                    },
+                },
+                {
+                    imgUrl: "../images/img3.png",
+                    h2: "盲僧李青",
+                    h2Img: "../images/dao_white.png",
+                    p: "考研的学习资料我是在一个直系的...",
+                    pImg: "../images/zuojiantou_white.png",
+                    time: "下午3:14",
+                    icon: "88",
+                    columnStyle: {
+                        minHeight: '3.8rem',
+                        background: '#52ACF7'
+                    },
+                    imgStyle: {
+                        border: '0.2rem solid #fff',
+                        borderRadius: '50%',
+                    },
+                    h2Style: {
+                        color: '#fff'
+                    },
+                    upStyle: {
+                        color: '#DFE8F0'
+                    },
+                    dpStyle: {
+                        color: '#DFE8F0'
+                    },
+                },
+                {
+                    imgUrl: "../images/img4.png",
+                    h2: "武汉考研交流",
+                    h2Img: "",
+                    p: "[学习局]邀请你一起学",
+                    pImg: "",
+                    time: "下午3:14",
+                    icon: "88",
+                    columnStyle: {
+                        minHeight: '3.8rem',
+                        background: '#FFA146'
+                    },
+                    imgStyle: {
+                        border: '0.2rem solid #fff',
+                        borderRadius: '50%',
+                    },
+                    h2Style: {
+                        color: '#fff'
+                    },
+                    upStyle: {
+                        color: '#F2DECC',
+                    },
+                    dpStyle: {
+                        color: '#F2DECC',
+                    },
+                },
+                {
+                    imgUrl: "../images/img5.png",
+                    h2: "盲僧李青",
+                    h2Img: "../images/dao_white.png",
+                    p: "考研的学习资料我是在一个直系的...",
+                    pImg: "../images/zuojiantou_white.png",
+                    time: "下午3:14",
+                    icon: "88",
+                    columnStyle: {
+                        minHeight: '3.8rem',
+                        background: '#FC8C2E'
+                    },
+                    imgStyle: {
+                        border: '0.2rem solid #fff',
+                        borderRadius: '50%',
+                    },
+                    h2Style: {
+                        color: '#fff'
+                    },
+                    upStyle: {
+                        color: '#F0E1D4'
+                    },
+                    dpStyle: {
+                        color: '#F0E1D4'
+                    },
+                },
+            ],
+        },
+    }).$mount("#app");
+
+</script>
+
+</html>

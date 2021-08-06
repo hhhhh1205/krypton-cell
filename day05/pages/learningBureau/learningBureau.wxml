@@ -1,0 +1,31 @@
+<!--pages/learningBureau.wxml-->
+<view class="container">
+  <Box show="true"></Box>
+  <view class="people">
+    <view class="showLittle" style="{{toggle ? 'height: 160px' : 'height: max-content'}}">
+      <view class="inputBox">
+      <view class="inputMsg">
+        <image src="../../images/5.png"></image>
+        <input type="text" placeholder="点击这里输入留言" placeholder-style="color: #CBCBCB;" />
+      </view>
+      <p></p>
+    </view>
+    <view class="intoBox" wx:for="{{peopleList}}" wx:key="key">
+     <view class="intoPeople">
+      <image src="{{item.imgUrl}}"></image>
+      <view class="content">
+        <p>02-22  {{item.time}}</p>
+        <text>{{item.name}}  加入了学习局</text>
+      </view>
+     </view>
+      <p></p>
+    </view>
+    </view>
+    <view class="showMore" bindtap="changeToggle">
+      <p>点击查看更多记录</p>
+      <image wx:if="{{toggle}}" src="../../images/down.png"></image>
+      <image wx:else src="../../images/up.png"></image>
+    </view>
+  </view>
+  <button class="getInto" bindtap="gotoStudyRoom">进入学习房</button>
+</view>

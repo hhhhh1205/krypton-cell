@@ -1,0 +1,82 @@
+html {
+  font-size: 14px;
+}
+html,
+body {
+  height: 100%;
+}
+#app {
+  height: 100%;
+  padding-bottom: 1rem;
+}
+.nav {
+  background-color: #5AC3BE;
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav img {
+  width: 7rem;
+  height: 7rem;
+}
+.nav p {
+  color: #fff;
+  margin: 1.6rem 0;
+  font-size: 1.2rem;
+}
+.nav span {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3rem;
+  padding: 0.5rem 2rem;
+}
+.container {
+  margin-top: 2.5rem;
+}
+.container .swiper-slide {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.container .swiper-slide h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.container .swiper-slide p {
+  font-size: 1rem;
+  color: #A7A7A7;
+  margin: 0.6rem 0 1.2rem;
+}
+.container .swiper-slide img {
+  width: 20rem;
+}
+.footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+.footer .pic img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.footer .pic img:first-child {
+  margin-right: 1.5rem;
+}
+.footer .copyright {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.footer .copyright p:last-of-type a {
+  color: #333333;
+}
+.footer .copyright p:last-of-type .ga {
+  position: relative;
+  top: 0.2rem;
+}

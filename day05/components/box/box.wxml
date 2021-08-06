@@ -1,0 +1,25 @@
+<!--components/box.wxml-->
+<view class="box">
+  <p class="title">{{title}}</p>
+  <view class="main">
+    <view wx:if="{{show}}" class="left">
+      <p>组局成功</p>
+      <text>4人已加入</text>
+      <view class="img">
+        <image wx:for="{{imgList}}" wx:key="key" src="{{item}}"></image>
+      </view>
+    </view>
+    <view wx:else class="left">
+      <p>组局中</p>
+      <text>1人已加入</text>
+      <view class="img sofa">
+        <image wx:for="{{imgListNull}}" wx:key="key" src="{{item}}"></image>
+      </view>
+    </view>
+    <view class="right">
+      <text>开始时间</text>
+      <p>12:00</p>
+      <text>02月26日  明天</text>
+    </view>
+  </view>
+</view>

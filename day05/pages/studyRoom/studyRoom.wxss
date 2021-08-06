@@ -1,0 +1,25 @@
+/* pages/studyRoom/studyRoom.wxss */
+.studyRoom{
+  padding-bottom: 269px;
+}
+
+.invitation{
+  background-color: #5094F3;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 15px 110px;
+  margin-top: 10px;
+  width: max-content !important;
+}
+
+.getInto{
+  background-color: #fff;
+  color: #5094F3;
+  border: 1px solid #EFF1F4;
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 15px 140px;
+  margin-top: 15px;
+  width: max-content !important;
+}

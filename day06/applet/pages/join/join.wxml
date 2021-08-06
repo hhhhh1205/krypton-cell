@@ -1,0 +1,34 @@
+<!--pages/join/join.wxml-->
+<view class="join">
+  <image class="bg" src="../../images/bg_34.png"></image>
+  <view class="main">
+    <view class="up">
+      <view class="content">
+        <p></p>
+        <text>作业局名称:</text>
+      </view>
+      <view class="name">{{inputValue}}</view>
+    </view>
+    <view class="middle">
+      <view class="content">
+        <p></p>
+        <text>学习任务:</text>
+      </view>
+      <view class="task">{{textareaValue}}</view>
+    </view>
+    <view class="down">
+      <view class="content">
+        <p></p>
+        <text>作业局成员:</text>
+      </view>
+      <view class="member">
+        <image class="pic" src="../../images/pic.png"></image>
+        <image src="../../images/add.png"></image>
+        <image src="../../images/add.png"></image>
+        <image src="../../images/add.png"></image>
+      </view>
+    </view>
+    <button bindtap="gotoStudywith">立即加入</button>
+    <image class="bubble" src="../../images/bubble.png"></image>
+  </view>
+</view>

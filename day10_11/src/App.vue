@@ -23,12 +23,20 @@
       <el-container style="padding: 0 100px">
         <el-aside
           width="200px"
-          style="margin-right: 30px; box-shadow: 0 2px 12px 0 #e0eaf2"
+          style="
+            margin-right: 30px;
+            box-shadow: 0 2px 12px 0 #e0eaf2;
+            height: max-content;
+          "
         >
           <Aside />
         </el-aside>
-        <el-main style="background: skyblue; padding: 0">
-          <router-view />
+        <el-main
+          style="border: 1px solid skyblue; padding: 0; overflow: hidden"
+        >
+          <transition name="mychange" mode="out-in">
+            <router-view></router-view>
+          </transition>
         </el-main>
       </el-container>
     </el-container>
@@ -57,6 +65,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  padding-bottom: 30px;
 }
 
 .head {

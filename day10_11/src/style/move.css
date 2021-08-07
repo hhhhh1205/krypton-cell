@@ -1,0 +1,30 @@
+@import "animate.css";
+
+@keyframes move-out{
+    from{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+}
+
+@keyframes move-in{
+    from{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.mychange-enter-active{
+    animation: move-in .6s;
+}
+.mychange-leave-active{
+    animation: move-out .6s;
+}

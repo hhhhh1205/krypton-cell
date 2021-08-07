@@ -8,7 +8,11 @@ import '../theme/index.css'
 import ElementUI from 'element-ui'
 Vue.use(ElementUI)
 
+import './mock/mock'
+
 import '@/style/common.css'
+
+import "@/style/move.css"
 
 Vue.config.productionTip = false
 

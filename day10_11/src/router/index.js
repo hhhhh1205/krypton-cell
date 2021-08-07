@@ -5,14 +5,39 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/main',
-    name: 'main',
-    component: () => import('@/views/main.vue')
+    path: '/homePage',
+    name: 'homePage',
+    component: () => import('@/views/homePage.vue')
+  },
+  {
+    path: '/contentManagementPage',
+    name: 'contentManagementPage',
+    component: () => import('@/views/contentManagementPage.vue')
+  },
+  {
+    path: '/personalManagementPage',
+    name: 'personalManagementPage',
+    component: () => import('@/views/personalManagementPage.vue')
+  },
+  {
+    path: '/classification',
+    name: 'classification',
+    component: () => import('@/views/classification.vue')
+  },
+  {
+    path: '/classification/personalAuthentication',
+    name: 'personalAuthentication',
+    component: () => import('@/views/personalAuthentication.vue')
+  },
+  {
+    path: '/classification/agencyCertification',
+    name: 'agencyCertification',
+    component: () => import('@/views/agencyCertification.vue')
   },
   {
     path: '*',
     redirect: {
-      name: "main"
+      name: "homePage"
     }
   },
 ]

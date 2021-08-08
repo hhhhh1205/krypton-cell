@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="classification">
     <div class="hed">
       <img
         style="width: 100%; height: 300px"
@@ -70,6 +70,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.classification {
+  background: #fff;
+}
+
 .hed {
   position: relative;
   box-shadow: none;

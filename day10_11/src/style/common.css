@@ -25,7 +25,6 @@ textarea {
     white-space: pre-wrap;
     word-wrap: break-word;
     background: #fff;
-    color: #fff;
 }
 ul, ol { list-style: none; }
 :focus{ outline:none;}

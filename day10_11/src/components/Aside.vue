@@ -34,8 +34,8 @@
               <span>涨粉</span>
             </template>
             <el-menu-item index="/classification">赞助自习室</el-menu-item>
-            <el-menu-item index="3-2">答疑</el-menu-item>
-            <el-menu-item index="3-3">举办live</el-menu-item>
+            <el-menu-item index="/answerQuestions">答疑</el-menu-item>
+            <el-menu-item index="/organizeLive">举办live</el-menu-item>
           </el-submenu>
 
           <el-submenu index="4">
@@ -43,16 +43,16 @@
               <i class="el-icon-coin"></i>
               <span>创收</span>
             </template>
-            <el-menu-item index="4-1">发布专辑</el-menu-item>
-            <el-menu-item index="4-2">举办付费Live</el-menu-item>
+            <el-menu-item index="/releaseAlbum">发布专辑</el-menu-item>
+            <el-menu-item index="/organizePaidLive">举办付费Live</el-menu-item>
           </el-submenu>
 
-          <el-menu-item index="5">
+          <el-menu-item index="/myProperty">
             <i class="el-icon-s-finance"></i>
             <span slot="title">我的资产</span>
           </el-menu-item>
 
-          <el-menu-item index="6">
+          <el-menu-item index="/myNetdisk">
             <i class="el-icon-upload"></i>
             <span slot="title">我的网盘</span>
           </el-menu-item>

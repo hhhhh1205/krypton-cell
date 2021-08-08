@@ -9,6 +9,7 @@ import ElementUI from 'element-ui'
 Vue.use(ElementUI)
 
 import './mock/mock'
+import './mock/proData'
 
 import '@/style/common.css'
 

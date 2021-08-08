@@ -35,6 +35,36 @@ const routes = [
     component: () => import('@/views/agencyCertification.vue')
   },
   {
+    path: '/answerQuestions',
+    name: 'answerQuestions',
+    component: () => import('@/views/answerQuestions.vue')
+  },
+  {
+    path: '/organizeLive',
+    name: 'organizeLive',
+    component: () => import('@/views/organizeLive.vue')
+  },
+  {
+    path: '/releaseAlbum',
+    name: 'releaseAlbum',
+    component: () => import('@/views/releaseAlbum.vue')
+  },
+  {
+    path: '/organizePaidLive',
+    name: 'organizePaidLive',
+    component: () => import('@/views/organizePaidLive.vue')
+  },
+  {
+    path: '/myProperty',
+    name: 'myProperty',
+    component: () => import('@/views/myProperty.vue')
+  },
+  {
+    path: '/myNetdisk',
+    name: 'myNetdisk',
+    component: () => import('@/views/myNetdisk.vue')
+  },
+  {
     path: '*',
     redirect: {
       name: "homePage"

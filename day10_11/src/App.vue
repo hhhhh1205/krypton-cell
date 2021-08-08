@@ -20,7 +20,7 @@
           </div>
         </div>
       </el-header>
-      <el-container style="padding: 0 100px">
+      <el-container style="padding: 0 200px">
         <el-aside
           width="200px"
           style="
@@ -31,9 +31,7 @@
         >
           <Aside />
         </el-aside>
-        <el-main
-          style="border: 1px solid skyblue; padding: 0; overflow: hidden"
-        >
+        <el-main style="padding: 0; overflow: hidden">
           <transition name="mychange" mode="out-in">
             <router-view></router-view>
           </transition>
@@ -73,7 +71,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 100px;
   box-sizing: border-box;
 }
 

@@ -3,25 +3,29 @@
     <el-row class="tac">
       <el-col :span="12">
         <el-menu
-          default-active="2"
+          :router="true"
+          :default-openeds="openeds"
+          :default-active="$route.path"
           class="el-menu-vertical-demo"
           @open="handleOpen"
           @close="handleClose"
         >
-          <router-link :to="{ name: 'main' }">
-            <el-menu-item index="1">
-              <i class="el-icon-s-shop"></i>
-              <span slot="title">主页</span>
-            </el-menu-item>
-          </router-link>
+          <el-menu-item index="/homePage">
+            <i class="el-icon-s-shop"></i>
+            <span slot="title">主页</span>
+          </el-menu-item>
 
           <el-submenu index="2">
             <template slot="title">
               <i class="el-icon-menu"></i>
               <span>管理</span>
             </template>
-            <el-menu-item index="2-1">内容管理</el-menu-item>
-            <el-menu-item index="2-2">个人主页管理</el-menu-item>
+            <el-menu-item index="/contentManagementPage">
+              内容管理
+            </el-menu-item>
+            <el-menu-item index="/personalManagementPage">
+              个人主页管理
+            </el-menu-item>
           </el-submenu>
 
           <el-submenu index="3">
@@ -29,14 +33,14 @@
               <i class="el-icon-s-data"></i>
               <span>涨粉</span>
             </template>
-            <el-menu-item index="3-1">赞助自习室</el-menu-item>
+            <el-menu-item index="/classification">赞助自习室</el-menu-item>
             <el-menu-item index="3-2">答疑</el-menu-item>
             <el-menu-item index="3-3">举办live</el-menu-item>
           </el-submenu>
 
           <el-submenu index="4">
             <template slot="title">
-              <i class="el-icon-wallet"></i>
+              <i class="el-icon-coin"></i>
               <span>创收</span>
             </template>
             <el-menu-item index="4-1">发布专辑</el-menu-item>
@@ -60,6 +64,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+      defaultActive: 1,
+      openeds: ["2", "3", "4"],
+    };
+  },
   methods: {
     handleOpen(key, keyPath) {
       console.log(key, keyPath);
@@ -82,6 +92,10 @@ export default {
 
 .aside >>> .el-row .el-menu-vertical-demo li {
   text-align: left;
+}
+
+.aside >>> .el-row .el-menu-vertical-demo li ul li {
+  text-color: #c7c7c7;
 }
 
 .aside >>> .el-col-12 {

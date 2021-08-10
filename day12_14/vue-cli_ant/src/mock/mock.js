@@ -170,7 +170,7 @@ Mock.mock('/api/delete/vedioInfo', 'post', (options) => {
 // 添加数据
 Mock.mock('/api/add/vedioInfo', 'post', (options) => {
     const body = JSON.parse(options.body);
-    console.log(body);
+    // console.log(body);
     vedioInfoList.unshift(Mock.mock({
         ...body
     }));

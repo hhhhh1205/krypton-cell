@@ -69,7 +69,7 @@ Mock.mock(/\/api\/label/, 'get', (options) => {
     // 计算总页数
     const totalPage = Math.ceil(label.length / pageSize);
 
-    const pageList = pageSize > totalPage ? [] : label.slice(start, end);
+    const pageList = pageIndex > totalPage ? [] : label.slice(start, end);
 
     return {
         status: 200,

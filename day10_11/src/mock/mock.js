@@ -29,7 +29,7 @@ Mock.mock('/api/publishJournal', 'post', (options) => {
     // 计算总页数
     const totalPage = Math.ceil(journalList.length / pageSize);
 
-    const pageList = pageSize > totalPage ? [] : journalList.slice(start, end);
+    const pageList = pageIndex > totalPage ? [] : journalList.slice(start, end);
 
     return {
         status: 200,
@@ -42,7 +42,7 @@ Mock.mock('/api/publishJournal', 'post', (options) => {
 // 内容管理页面删除数据
 Mock.mock('/api/delete/publishJournal', 'post', (options) => {
     const body = JSON.parse(options.body);
-    console.log(body);
+    // console.log(body);
 
     // 找到要删除数据的索引
     const index = journalList.findIndex(item => item.name === body.name)

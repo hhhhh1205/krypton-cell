@@ -15,7 +15,11 @@
       </div>
       <div class="userinfo">
         <div class="user">
-          <uploadAvatar></uploadAvatar>
+          <img
+            style="width: 80px; height: 80px; border-radius: 50%"
+            src="@/assets/1.jpg"
+            alt=""
+          />
           <p>李源</p>
         </div>
         <button>编辑资料</button>

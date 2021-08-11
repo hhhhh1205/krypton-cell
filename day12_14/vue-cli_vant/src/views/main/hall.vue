@@ -73,10 +73,10 @@ import "moment/locale/zh-cn";
 export default {
   data() {
     return {
-      // currentRate: 0,
+      currentRate: 59,
       remainingDays: "",
       toggle: "",
-      countDown: "",
+      countDown: "100",
       list: [
         {
           speakPeople: 3,
@@ -129,18 +129,18 @@ export default {
       moment.locale();
       return moment().format("dddd");
     },
-    currentRate: {
-      get() {
-        let arr = this.countDown.split(":");
-        let count_down = Math.ceil((1620 - arr[0] * 60 - arr[1] * 1) * 0.14);
-        return count_down;
-      },
-      set() {
-        let arr = this.countDown.split(":");
-        let count_down = Math.ceil(((1620 - arr[0]) * 60 - arr[1] * 1) * 0.14);
-        return count_down;
-      },
-    },
+    // currentRate: {
+    //   get() {
+    //     let arr = this.countDown.split(":");
+    //     let count_down = Math.ceil((2000 - arr[0] * 60 - arr[1] * 1) * 0.14);
+    //     return count_down;
+    //   },
+    //   set() {
+    //     let arr = this.countDown.split(":");
+    //     let count_down = Math.ceil(((2000 - arr[0]) * 60 - arr[1] * 1) * 0.14);
+    //     return count_down;
+    //   },
+    // },
   },
   methods: {
     createRoom() {

@@ -65,7 +65,7 @@
           <div v-else class="personal" v-for="(person, j) in others">
             <p style="height: 16px"></p>
             <div class="pic">
-              <img :src="person.src" alt="" />
+              <img :src="person.src" alt="" @click="showActionSheet(j)" />
               <span :class="person.cls"></span>
             </div>
             <p class="name">{{ person.name }}</p>
@@ -94,7 +94,7 @@
         <van-action-sheet v-model="toggle">
           <div class="onContent">
             <div class="oneRow">
-              <img :src="nowSheet.img" alt="" />
+              <img :src="img" alt="" />
               <div class="twoIcon">
                 <p><span class="iconfont icon-jubao"></span>举报</p>
                 <van-button class="van_btn" round type="default"
@@ -102,10 +102,10 @@
                 >
               </div>
             </div>
-            <p class="twoRow">{{ nowSheet.name }}</p>
+            <p class="twoRow">{{ name }}</p>
             <div class="threeRow">
-              <p>{{ nowSheet.num1 }}<span>关注</span></p>
-              <p>{{ nowSheet.num2 }}<span>粉丝</span></p>
+              <p>{{ num1 }}<span>关注</span></p>
+              <p>{{ num2 }}<span>粉丝</span></p>
             </div>
             <div class="fourRow">
               <p><span class="iconfont icon-Vrenzheng"></span>2021年入市</p>
@@ -283,12 +283,12 @@ export default {
           name: "二月",
         },
       ],
-      nowSheet: {
-        img: require("@/assets/1.jpg"),
-        name: "李源",
-        num1: 23,
-        num2: 18,
-      },
+
+      img: require("@/assets/1.jpg"),
+      name: "李源",
+      num1: 23,
+      num2: 18,
+
       sheet: [
         {
           img: require("@/assets/1.jpg"),
@@ -317,16 +317,12 @@ export default {
       ],
     };
   },
-  // computed: {
-  //   sheetChange: function () {
-  //     return this.nowSheet;
+
+  // watch: {
+  //   nowSheet(newVal, oldVal) {
+  //     console.log(newVal, oldVal);
   //   },
   // },
-  watch: {
-    nowSheet(newVal, oldVal) {
-      console.log(newVal, oldVal);
-    },
-  },
   methods: {
     changeMic() {
       this.changemic = !this.changemic;
@@ -338,11 +334,17 @@ export default {
 
     showActionSheet(num) {
       if (num == "4") {
-        this.showSheet = this.sheet[0];
-        // console.log(this.showSheet);
+        this.img = this.sheet[0].img;
+        this.name = this.sheet[0].name;
+        this.num1 = this.sheet[0].num1;
+        this.num2 = this.sheet[0].num2;
       } else {
-        this.showSheet = this.sheet[num + 1];
+        this.img = this.sheet[num + 1].img;
+        this.name = this.sheet[num + 1].name;
+        this.num1 = this.sheet[num + 1].num1;
+        this.num2 = this.sheet[num + 1].num2;
       }
+      // console.log(this.showSheet);
       this.toggle = !this.toggle;
     },
 
